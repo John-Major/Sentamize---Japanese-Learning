@@ -28,5 +28,5 @@ def index(request):
     testing = driver.find_element_by_xpath('//*[@id="primary"]/div[1]/div[1]/div[1]/div[1]/div/span[2]')
     testing2 = driver.find_element_by_xpath('//*[@id="primary"]/div[1]/div[1]/div[2]/div/div/div/span[2]')
 
-    response = "Word: " + testing.text +"\nMeaning: " + testing2.text + "\n"
+    response = "Word: " + testing.text +"   Meaning: " + testing2.text 
     return  HttpResponse(response)
